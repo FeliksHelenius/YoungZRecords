@@ -4,9 +4,9 @@ import Contact from './pages/contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/YoungZRecords">
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route exact path="/YoungZRecords" element={<Landing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
