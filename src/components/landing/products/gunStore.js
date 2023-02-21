@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default function GunStore() {
-  return <div></div>;
+  return (
+    <div id="gun-store">
+      <div></div>
+    </div>
+  );
 }

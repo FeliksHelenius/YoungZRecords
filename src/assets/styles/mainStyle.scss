@@ -13,6 +13,7 @@
     background-position: center;
     font-family: 'Mukta', sans-serif;
     overflow: hidden;
+    color: white;
   }
   a {
     text-decoration: none;
@@ -101,27 +102,63 @@
       background: $base-color;
     }
     #product-container {
+      display: flex;
+      position: absolute;
       width: 100vw;
       height: 100vh;
-      position: absolute;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-      .product {
-        width: 100vw;
-        height: 100vh;
-      }
       .forward-button {
+        background-color: transparent;
+        color: white;
         position: absolute;
-        top: 50%;
-        left: 100%;
-        transform: translateY(-50%);
+        place-self: flex-end;
       }
       .back-button {
+        color: white;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        place-self: flex-start;
       }
       .buy-button {
         position: absolute;
+        width: 20%;
+        height: 5%;
+        top: 90%;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 10px 10px 8px 8px;
+        box-shadow: inset -0px -4px 3px $color-accent-dark;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+
+        &:active {
+          box-shadow: none;
+          top: 90.2%;
+        }
+      }
+      .right-arrow,
+      .left-arrow {
+        width: 10vw;
+        height: 10vh;
+      }
+
+      #product {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        #gun-store {
+          width: 100vw;
+          height: 50vh;
+          background-image: $gun-store;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
       }
     }
   }

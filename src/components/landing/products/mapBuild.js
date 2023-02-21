@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function MapBuild() {
-  return <div></div>;
+  return <div>mapBuild</div>;
 }
