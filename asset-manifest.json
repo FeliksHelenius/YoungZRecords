@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/YoungZRecords/static/css/main.ef882a44.css",
-    "main.js": "/YoungZRecords/static/js/main.4cee3de5.js",
+    "main.js": "/YoungZRecords/static/js/main.2d4e838b.js",
     "static/media/background-phone.jpg": "/YoungZRecords/static/media/background-phone.572adf2a8f976571d403.jpg",
     "index.html": "/YoungZRecords/index.html",
     "main.ef882a44.css.map": "/YoungZRecords/static/css/main.ef882a44.css.map",
-    "main.4cee3de5.js.map": "/YoungZRecords/static/js/main.4cee3de5.js.map"
+    "main.2d4e838b.js.map": "/YoungZRecords/static/js/main.2d4e838b.js.map"
   },
   "entrypoints": [
     "static/css/main.ef882a44.css",
-    "static/js/main.4cee3de5.js"
+    "static/js/main.2d4e838b.js"
   ]
 }
