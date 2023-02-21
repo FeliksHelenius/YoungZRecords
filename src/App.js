@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter basename="/YoungZRecords">
       <Routes>
         <Route exact path="/YoungZRecords" element={<Landing />} />
-        <Route exact path="/" element={<Landing />} />
+        {/* <Route exact path="/" element={<Landing />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
