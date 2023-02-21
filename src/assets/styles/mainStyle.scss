@@ -1,0 +1,49 @@
+@import './designDoc.scss';
+@import 'animate.css';
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $background-picture-phone;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #preview-work {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    animation: forwards fadeInLeftBig 1s ease-in-out;
+    .container-cover {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.866);
+    }
+  }
+  nav {
+    display: flex;
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    background-color: transparent;
+    z-index: 1;
+    #menu-button-inactive {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      .menu-button-svg {
+        color: $color-accent-light;
+      }
+    }
+    #menu-button-active {
+      .menu-button-svg {
+        width: 20px;
+        height: 20px;
+        fill: $color-accent-dark;
+      }
+    }
+  }
+}
