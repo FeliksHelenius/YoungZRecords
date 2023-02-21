@@ -1,9 +1,11 @@
 import React from 'react';
+import { Fragment } from 'react';
 
 export default function GunStore() {
   return (
-    <div id="gun-store">
-      <div></div>
-    </div>
+    <Fragment>
+      <div className="product gun-store"></div>
+      <p>Gun Store System</p>
+    </Fragment>
   );
 }

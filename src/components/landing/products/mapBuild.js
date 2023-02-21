@@ -1,5 +1,11 @@
 import React from 'react';
+import { Fragment } from 'react';
 
 export default function MapBuild() {
-  return <div>mapBuild</div>;
+  return (
+    <Fragment>
+      <div className="product map-build"></div>
+      <p>Map Build</p>
+    </Fragment>
+  );
 }
