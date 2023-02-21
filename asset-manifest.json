@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/YoungZRecords/static/css/main.966be876.css",
-    "main.js": "/YoungZRecords/static/js/main.aafd8a82.js",
+    "main.css": "/YoungZRecords/static/css/main.72ff1420.css",
+    "main.js": "/YoungZRecords/static/js/main.0a1f35ac.js",
     "static/media/background-phone.jpg": "/YoungZRecords/static/media/background-phone.572adf2a8f976571d403.jpg",
+    "static/media/gun-store.jpg": "/YoungZRecords/static/media/gun-store.ef4bee4aa5fdad252602.jpg",
     "index.html": "/YoungZRecords/index.html",
-    "main.966be876.css.map": "/YoungZRecords/static/css/main.966be876.css.map",
-    "main.aafd8a82.js.map": "/YoungZRecords/static/js/main.aafd8a82.js.map"
+    "main.72ff1420.css.map": "/YoungZRecords/static/css/main.72ff1420.css.map",
+    "main.0a1f35ac.js.map": "/YoungZRecords/static/js/main.0a1f35ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.966be876.css",
-    "static/js/main.aafd8a82.js"
+    "static/css/main.72ff1420.css",
+    "static/js/main.0a1f35ac.js"
   ]
 }
