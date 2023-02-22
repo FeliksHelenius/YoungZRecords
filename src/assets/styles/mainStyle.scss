@@ -75,7 +75,7 @@
     width: 80vw;
     height: 8vh;
     border-radius: 20px 20px 0px 0px;
-    background-color: $secondary-color;
+    background-color: #212121;
     z-index: 1;
 
     .contact-container {
@@ -163,25 +163,33 @@
           height: 30vh;
           top: 10%;
           border-radius: 20px 20px 20px 20px;
-          background-color: $base-color;
+          background-color: #212121;
           animation: fadeIn 0.5s ease-out;
         }
-        .gun-store {
+        .gun-store-img {
+          width: 100vw;
+          height: 100vh;
           background-image: $gun-store;
           background-size: contain;
           background-repeat: no-repeat;
         }
-        .main-menu {
+        .main-menu-img {
+          width: 100vw;
+          height: 100vh;
           background-image: $main-menu;
           background-size: contain;
           background-repeat: no-repeat;
         }
-        .map-build {
+        .map-build-img {
+          width: 100vw;
+          height: 100vh;
           background-image: $map-build;
           background-size: contain;
           background-repeat: no-repeat;
         }
-        .phone-system {
+        .phone-system-img {
+          width: 100vw;
+          height: 29vh;
           background-image: $phone-system;
           background-size: contain;
           background-position: center;
@@ -190,7 +198,7 @@
 
         p {
           position: relative;
-          top: 37%;
+          top: 40%;
           font-size: larger;
           font-weight: bolder;
         }
@@ -202,7 +210,7 @@
     width: 100vw;
     height: 7vh;
     border-radius: 0px 0px 20px 20px;
-    background-color: rgb(52, 52, 52);
+    background-color: #212121;
     z-index: 2;
     font-size: x-large;
     font-weight: bolder;

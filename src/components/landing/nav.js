@@ -4,7 +4,7 @@ import icons from '../../assets/icons';
 import { Fragment } from 'react';
 
 export default function Nav() {
-  let [isActive, setIsActive] = useState(false);
+  let [isActive, setIsActive] = useState(true);
 
   function handleClass() {
     setIsActive((current) => !current);

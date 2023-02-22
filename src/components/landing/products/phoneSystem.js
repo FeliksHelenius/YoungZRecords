@@ -4,7 +4,9 @@ import { Fragment } from 'react';
 export default function PhoneSystem() {
   return (
     <Fragment>
-      <div className="product phone-system"></div>
+      <div className="product phone-system">
+        <div className="phone-system-img"></div>
+      </div>
       <p>Phone System</p>
     </Fragment>
   );
