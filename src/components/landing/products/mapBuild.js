@@ -7,7 +7,10 @@ export default function MapBuild() {
       <div className="product map-build">
         <div className="map-build-img"></div>
       </div>
-      <p>Map Build</p>
+      <div className="info">
+        <p>Map Build</p>
+        <p className="price">30$</p>
+      </div>
     </Fragment>
   );
 }

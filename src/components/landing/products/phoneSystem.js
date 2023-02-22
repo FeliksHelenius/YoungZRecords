@@ -7,7 +7,10 @@ export default function PhoneSystem() {
       <div className="product phone-system">
         <div className="phone-system-img"></div>
       </div>
-      <p>Phone System</p>
+      <div className="info">
+        <p>Phone System</p>
+        <p className="price">10$</p>
+      </div>
     </Fragment>
   );
 }

@@ -7,7 +7,10 @@ export default function GunStore() {
       <div className="product gun-store">
         <div className="gun-store-img"></div>
       </div>
-      <p>Gun Store System</p>
+      <div className="info">
+        <p>Gun Store System</p>
+        <p className="price">20$</p>
+      </div>
     </Fragment>
   );
 }

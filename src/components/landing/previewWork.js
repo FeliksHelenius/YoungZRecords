@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import icons from '../../assets/icons';
 import GunStore from './products/gunStore';
 import PhoneSystem from './products/phoneSystem';
@@ -14,6 +14,11 @@ let products = [
 
 export default function PreviewWork() {
   let [count, setCount] = useState(0);
+  let [isActive, setIsActive] = useState(false);
+  let [selectedItem, setSelectedItem] = useState(null);
+  useEffect(() => {
+    setSelectedItem((selectedItem = products[count]));
+  });
 
   function handleClick(element) {
     if (element.currentTarget.className === 'forward-button' && count < 3) {
@@ -22,9 +27,8 @@ export default function PreviewWork() {
       setCount(count - 1);
     }
     if (element.currentTarget.className === 'buy-button') {
-      return;
+      setIsActive((current) => !current);
     }
-    console.log(count, element.currentTarget.className);
   }
   return (
     <div id="preview-work">
@@ -37,9 +41,14 @@ export default function PreviewWork() {
         <div className="forward-button" onClick={handleClick.bind(this)}>
           {icons.rightArrow}
         </div>
-        <button className="buy-button" onClick={handleClick.bind(this)}>
-          Buy
-        </button>
+        <div className="buy-button" onClick={handleClick.bind(this)}>
+          BUY
+        </div>
+      </div>
+      <div className={isActive ? 'checkout open' : 'checkout closed'}>
+        <div className="buy-section">
+          <p>{selectedItem}</p>
+        </div>
       </div>
     </div>
   );

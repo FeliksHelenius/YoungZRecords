@@ -1,5 +1,6 @@
 import React from 'react';
+import NavTop from '../components/landing/navTop';
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return <NavTop />;
 }

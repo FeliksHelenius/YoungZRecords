@@ -138,6 +138,7 @@
         font-weight: bold;
         color: white;
         letter-spacing: 2px;
+        text-align: center;
 
         &:active {
           box-shadow: none;
@@ -148,6 +149,10 @@
       .left-arrow {
         width: 10vw;
         height: 10vh;
+        &:active {
+          transition: all 0.1s ease-out;
+          color: #212121;
+        }
       }
 
       #product {
@@ -196,16 +201,65 @@
           background-repeat: no-repeat;
         }
 
-        p {
+        .info {
+          display: flex;
           position: relative;
-          top: 40%;
-          font-size: larger;
-          font-weight: bolder;
+          top: 32%;
+          width: 100vw;
+          height: 8vh;
+          background-color: #212121d2;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0px 0px 10px 10px;
+          animation: fadeIn 1s ease-out;
+          p {
+            position: relative;
+            font-size: larger;
+            font-weight: bolder;
+            z-index: 2;
+            top: -20%;
+          }
+          .price {
+            position: absolute;
+            top: 10%;
+          }
         }
       }
     }
+    .checkout.open {
+      display: flex;
+      position: relative;
+      width: 100vw;
+      height: 30vh;
+      top: 58%;
+      background-color: #212121;
+      border-radius: 10px 10px 0px 0px;
+      z-index: 2;
+      .buy-section {
+        display: flex;
+        position: relative;
+        width: 100vw;
+        height: 6vh;
+        background-color: $secondary-color;
+        border-radius: 0px 0px 50px 50px;
+        justify-content: center;
+        align-items: center;
+        .info {
+          display: flex;
+          position: relative;
+          gap: 10px;
+          font-weight: bolder;
+          color: white;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .checkout.closed {
+      display: none;
+    }
   }
   #nav-top {
+    display: grid;
     position: absolute;
     width: 100vw;
     height: 7vh;
@@ -216,6 +270,10 @@
     font-weight: bolder;
     text-align: center;
     color: white;
+    grid-template-columns: 20% 60% 20%;
+    .home-button {
+      width: 10vw;
+      height: 6vh;
+    }
   }
 }
-//for desktop

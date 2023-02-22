@@ -7,7 +7,10 @@ export default function MainMenuSystem() {
       <div className="product main-menu">
         <div className="main-menu-img"></div>
       </div>
-      <p>Main Menu System</p>
+      <div className="info">
+        <p>Main Menu System</p>
+        <p className="price">15$</p>
+      </div>
     </Fragment>
   );
 }
